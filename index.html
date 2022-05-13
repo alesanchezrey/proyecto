@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagenes/funkologo.png">
     <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Funko Pop Stars</title>
 </head>
 
@@ -26,7 +27,7 @@
             </ul>
         </nav>
         <div class="listCarrito"><a href=""><img class="logoCarrito" src="imagenes/carrito.png"
-            alt="carrito compra"></a>
+                    alt="carrito compra"></a>
         </div>
     </header>
 
@@ -44,7 +45,7 @@
                 obcaecati quaerat quasi iure, fuga voluptate eum accusantium sapiente quisquam aspernatur vitae atque!
                 Iste, in repellendus!</p>
         </div>
-        <div class="categorias">
+        <div data-aos="zoom-in-up" class="categorias">
             <img class="homeMarvel" src="imagenes/col1.jpg" alt="Marvel">
             <img class="homeDC" src="imagenes/col2.jpg" alt="DC">
         </div>
@@ -68,7 +69,12 @@
         </div>
         <div class="lineaDiv">© 2022 Funko Pop Stars. All Rights Reserved.</div>
     </footer>
-    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
