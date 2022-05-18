@@ -4,7 +4,8 @@
     box-sizing: content-box;
 }
 
-a { text-decoration: none;
+a {
+    text-decoration: none;
     color: white;
     font-family: 'Lato', sans-serif;
 }
@@ -17,6 +18,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&family=Roboto:wght@100&display=swap');
 
@@ -36,17 +38,15 @@ h2 {
     background-image: linear-gradient(to left, #084C61, #4F6D7A);
 }
 
-.navbar-nav a{
+.navbar-nav a {
     color: white;
     font-family: 'Lato', sans-serif;
 }
 
-.navbar-collapse {
-    justify-content: center;
-}
+
 
 .botonera {
-    margin-left: 25px; 
+    margin-left: 25px;
 }
 
 .botonera ul li {
@@ -76,7 +76,7 @@ h2 {
 .slider {
     padding: 20px;
     grid-area: imagenCentral;
-} 
+}
 
 .imagenSlider {
     width: 100%;
@@ -85,6 +85,7 @@ h2 {
 .info {
     background-color: #56A3A6;
 }
+
 .info h2 {
     padding: 20px;
     color: #E3B505;
@@ -125,7 +126,7 @@ h2 {
 }
 
 .botonMas a {
-    color: white; 
+    color: white;
     border: 1px solid #E3B505;
     padding: 20px;
     background-color: #56A3A6;
@@ -137,14 +138,14 @@ h2 {
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .8s;
 }
 
-.botonMas:active{
-    transform:translateY(4px);
+.botonMas:active {
+    transform: translateY(4px);
 }
 
 .seccionAzul {
     background-color: #4F6D7A;
     padding: 20px;
-    grid-area: azul;   
+    grid-area: azul;
 }
 
 .seccionAzulHijo {
@@ -171,7 +172,7 @@ h2 {
 .cuadros div {
     padding: 30px;
     text-align: center;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 .cuadros p {
@@ -179,7 +180,7 @@ h2 {
 }
 
 .cuadros a {
-    color: white; 
+    color: white;
     border: 1px solid #E3B505;
     background-color: #56A3A6;
     padding: 10px;
@@ -199,7 +200,7 @@ h2 {
 
 .arribaProd {
     background-color: #56A3A6;
-    padding: 20px; 
+    padding: 20px;
     grid-area: arriba;
 }
 
@@ -310,6 +311,12 @@ h2 {
 }
 
 /* RESPONSIVE */
+
+@media (min-width: 991px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+}
 
 @media screen and (min-width:600px) and (max-width:1023px) {
     .siguenos {
