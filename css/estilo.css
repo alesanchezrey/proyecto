@@ -133,6 +133,7 @@ h2 {
     border-radius: 4px;
 }
 
+/* PSEUDOCLASES Y PSEUDOELEMENTOS */
 .botonMas:hover {
     transform: translateY(-4px);
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .8s;
@@ -140,6 +141,28 @@ h2 {
 
 .botonMas:active {
     transform: translateY(4px);
+}
+
+.botonComprar:hover {
+    transform: translateY(-4px);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .8s;
+}
+
+.botonComprar:active {
+    transform: translateY(4px);
+}
+
+.boton:hover {
+    transform: translateY(-4px);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .8s;
+}
+
+.boton:active {
+    transform: translateY(4px);
+}
+
+.campo:focus {
+    background-color: #4F6D7A;
 }
 
 .seccionAzul {
@@ -310,7 +333,7 @@ h2 {
     grid-area: redes;
 }
 
-/* RESPONSIVE */
+/* MEDIA QUERIES */
 
 @media (min-width: 991px) {
     .navbar-expand-lg .navbar-toggler {
