@@ -1,0 +1,33 @@
+/*MAP*/
+
+$azules:(color:#4F6D7A,espaciado:20px);
+
+.seccionAzul {
+    background-color: map-get($azules,color);
+    padding: map-get($azules,espaciado);
+    grid-area: azul;
+  }
+
+/*EXTEND*/
+
+.contenedorVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+.footerLogo {
+    @extend .contenedorVideo;
+  }
+
+/*MIXIN*/
+
+@mixin tamanos {
+    height: 400px;
+    width: 400px;
+}
+
+.producImg {
+    @include tamanos;
+  }

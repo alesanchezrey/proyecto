@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&family=Roboto:wght@100&display=swap');
 @import "variables";
+@import "sass2";
 
 * {
     margin: 0;
@@ -120,12 +121,6 @@
   }
 
   /* SECCIONES CONTENIDO AZUL OSCURO */
-
-  .seccionAzul {
-    background-color: #4F6D7A;
-    padding: 20px;
-    grid-area: azul;
-  }
   
   .seccionAzulHijo {
     margin-top: 30px;
@@ -137,14 +132,7 @@
     p {
       padding: 20px;
     }
-  }
-  
-  .contenedorVideo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+  } 
   
   .video {
     padding: 20px;
@@ -189,11 +177,6 @@
     p {
       padding: 20px;
     }
-  }
-  
-  .producImg {
-    width: 400px;
-    height: 400px;
   }
 
   /* PSEUDOCLASES Y PSEUDOELEMENTOS */
@@ -283,13 +266,6 @@
       padding: 20px;
       width: 200px;
     }
-  }
-  
-  .footerLogo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
     
   .lineaDiv {
