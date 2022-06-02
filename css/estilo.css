@@ -58,7 +58,7 @@ h2 {
 
 .info {
   background-color: #56A3A6; }
-  .info h2 {
+  .info h1 {
     padding: 20px;
     color: #E3B505; }
   .info p {
@@ -98,7 +98,7 @@ h2 {
 
 .seccionAzulHijo {
   margin-top: 30px; }
-  .seccionAzulHijo h2 {
+  .seccionAzulHijo h1 {
     color: #E3B505; }
   .seccionAzulHijo p {
     padding: 20px; }
@@ -135,7 +135,7 @@ h2 {
   background-color: #56A3A6;
   padding: 20px;
   grid-area: arriba; }
-  .arribaProd h2 {
+  .arribaProd h1 {
     color: #E3B505; }
   .arribaProd p {
     padding: 20px; }
