@@ -150,6 +150,52 @@
     padding: 20px;
   }
 
+  .cuadros {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: cuadros;
+  
+    div {
+      padding: 30px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    p {
+      margin-bottom: 20px;
+    }
+  
+    a {
+      color: white;
+      border: 1px solid #E3B505;
+      background-color: #56A3A6;
+      padding: 10px;
+    }
+  }
+
+  /* SECCION PRODUCTOS */
+
+  .arribaProd {
+    background-color: #56A3A6;
+    padding: 20px;
+    grid-area: arriba;
+  
+    h2 {
+      color: #E3B505;
+    }
+  
+    p {
+      padding: 20px;
+    }
+  }
+  
+  .producImg {
+    width: 400px;
+    height: 400px;
+  }
+
   /* PSEUDOCLASES Y PSEUDOELEMENTOS */
 
 .botonMas {
@@ -176,6 +222,48 @@
   
   .campo:focus {
     background-color: #4F6D7A;
+  }
+
+  /* FORMULARIO CONTACTO */
+
+  .secForm {
+    grid-area: contenedor;
+  }
+  
+  .contenedor {
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    border: solid 1px #99A799;
+    border-radius: 4px;
+  
+    h2 {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .campo {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+  }
+  
+  .boton {
+    color: white;
+    background-color: #56A3A6;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
 
   /* PARTE DE REDES Y FOOTER */

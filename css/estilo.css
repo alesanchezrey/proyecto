@@ -90,6 +90,60 @@ h2 {
     background-color: #56A3A6;
     border-radius: 4px; }
 
+/* SECCIONES CONTENIDO AZUL OSCURO */
+.seccionAzul {
+  background-color: #4F6D7A;
+  padding: 20px;
+  grid-area: azul; }
+
+.seccionAzulHijo {
+  margin-top: 30px; }
+  .seccionAzulHijo h2 {
+    color: #E3B505; }
+  .seccionAzulHijo p {
+    padding: 20px; }
+
+.contenedorVideo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.video {
+  padding: 20px; }
+
+.cuadros {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: cuadros; }
+  .cuadros div {
+    padding: 30px;
+    text-align: center;
+    margin-top: 10px; }
+  .cuadros p {
+    margin-bottom: 20px; }
+  .cuadros a {
+    color: white;
+    border: 1px solid #E3B505;
+    background-color: #56A3A6;
+    padding: 10px; }
+
+/* SECCION PRODUCTOS */
+.arribaProd {
+  background-color: #56A3A6;
+  padding: 20px;
+  grid-area: arriba; }
+  .arribaProd h2 {
+    color: #E3B505; }
+  .arribaProd p {
+    padding: 20px; }
+
+.producImg {
+  width: 400px;
+  height: 400px; }
+
 /* PSEUDOCLASES Y PSEUDOELEMENTOS */
 .botonMas:hover {
   transform: translateY(-4px);
@@ -98,11 +152,50 @@ h2 {
 .botonMas:active {
   transform: translateY(4px); }
 
-/* PARTE DE REDES Y FOOTER */
-#redes h2 {
-  text-align: center;
-  margin-top: 150px; }
+.botonComprar:hover, .boton:hover {
+  transform: translateY(-4px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s; }
 
+.botonComprar:active, .boton:active {
+  transform: translateY(4px); }
+
+.campo:focus {
+  background-color: #4F6D7A; }
+
+/* FORMULARIO CONTACTO */
+.secForm {
+  grid-area: contenedor; }
+
+.contenedor {
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+  border: solid 1px #99A799;
+  border-radius: 4px; }
+  .contenedor h2 {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .contenedor p {
+    font-size: 20px;
+    margin-bottom: 15px; }
+
+.campo {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto; }
+
+.boton {
+  color: white;
+  background-color: #56A3A6;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+/* PARTE DE REDES Y FOOTER */
 .siguenos img {
   margin-top: 60px;
   width: 80px;
@@ -111,16 +204,15 @@ h2 {
 .footer {
   background-image: linear-gradient(to bottom, #084C61, #4F6D7A);
   grid-area: footer; }
+  .footer img {
+    padding: 20px;
+    width: 200px; }
 
 .footerLogo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-
-.footer img {
-  padding: 20px;
-  width: 200px; }
 
 .lineaDiv {
   border-top: #E3B505 3px solid;
@@ -133,6 +225,9 @@ h2 {
   align-items: center;
   margin-bottom: 50px;
   grid-area: redes; }
+  #redes h2 {
+    text-align: center;
+    margin-top: 150px; }
 
 /* MEDIA QUERIES */
 @media (min-width: 991px) {
