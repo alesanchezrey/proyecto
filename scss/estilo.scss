@@ -39,12 +39,13 @@
   
   .botonera {
     margin-left: 25px;
-  
-    ul li {
-      display: inline-block;
-      margin-right: 25px;
-      text-transform: uppercase;
-      font-family: $fuentes;
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 25px;
+        text-transform: uppercase;
+        font-family: $fuentes;
+      }
     }
   }
   
@@ -118,6 +119,37 @@
     }
   }
 
+  /* SECCIONES CONTENIDO AZUL OSCURO */
+
+  .seccionAzul {
+    background-color: #4F6D7A;
+    padding: 20px;
+    grid-area: azul;
+  }
+  
+  .seccionAzulHijo {
+    margin-top: 30px;
+  
+    h2 {
+      color: #E3B505;
+    }
+  
+    p {
+      padding: 20px;
+    }
+  }
+  
+  .contenedorVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video {
+    padding: 20px;
+  }
+
   /* PSEUDOCLASES Y PSEUDOELEMENTOS */
 
 .botonMas {
@@ -131,22 +163,38 @@
     }
   }
 
-  /* PARTE DE REDES Y FOOTER */
-
-#redes h2 {
-    text-align: center;
-    margin-top: 150px;
+  .botonComprar, .boton {
+    &:hover {
+      transform: translateY(-4px);
+      transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
+    }
+  
+    &:active {
+      transform: translateY(4px);
+    }
   }
   
-  .siguenos img {
-    margin-top: 60px;
-    width: 80px;
-    padding: 40px;
+  .campo:focus {
+    background-color: #4F6D7A;
+  }
+
+  /* PARTE DE REDES Y FOOTER */
+  
+  .siguenos {
+    img {
+      margin-top: 60px;
+      width: 80px;
+      padding: 40px;
+    }
   }
   
   .footer {
     background-image: linear-gradient(to bottom, #084C61, #4F6D7A);
     grid-area: footer;
+    img {
+      padding: 20px;
+      width: 200px;
+    }
   }
   
   .footerLogo {
@@ -155,12 +203,7 @@
     justify-content: center;
     align-items: center;
   }
-  
-  .footer img {
-    padding: 20px;
-    width: 200px;
-  }
-  
+    
   .lineaDiv {
     border-top: #E3B505 3px solid;
     padding: 10px;
@@ -173,6 +216,10 @@
     align-items: center;
     margin-bottom: 50px;
     grid-area: redes;
+    h2 {
+      text-align: center;
+      margin-top: 150px;
+    }
   }
 
   /* MEDIA QUERIES */
