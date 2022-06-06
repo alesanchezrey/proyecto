@@ -17,6 +17,7 @@
   
   p {
     font-family: $fuentes;
+    font-size: 20px;
   }
   
   h2 {
@@ -89,35 +90,11 @@
     }
   }
   
-  .categorias {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
   .homeMarvel, .homeDC {
     display: inline-block;
     margin-top: 30px;
     width: 200px;
     height: 200px;
-  }
-  
-  .botonMas {
-    margin-top: 35px;
-    font-size: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  
-    a {
-      color: white;
-      border: 1px solid #E3B505;
-      padding: 20px;
-      background-color: #56A3A6;
-      border-radius: 4px;
-    }
   }
 
   /* SECCIONES CONTENIDO AZUL OSCURO */

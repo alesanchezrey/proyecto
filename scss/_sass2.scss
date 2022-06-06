@@ -21,6 +21,27 @@ $azules:(color:#4F6D7A,espaciado:20px);
     @extend .contenedorVideo;
   }
 
+.categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.botonMas {
+    margin-top: 35px;
+    font-size: 25px;
+    @extend .categorias;
+  
+    a {
+      color: white;
+      border: 1px solid #E3B505;
+      padding: 20px;
+      background-color: #56A3A6;
+      border-radius: 4px;
+    }
+  }
+
 /*MIXIN*/
 
 @mixin tamanos {
