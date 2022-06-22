@@ -113,8 +113,7 @@ h2 {
 .homeMarvel, .homeDC {
   display: inline-block;
   margin-top: 30px;
-  width: 200px;
-  height: 200px; }
+  width: 300px; }
 
 .muestras {
   width: 100%; }
@@ -137,7 +136,7 @@ h2 {
   align-items: center;
   grid-area: cuadros; }
   .cuadros div {
-    padding: 30px;
+    padding: 10px;
     text-align: center;
     margin-top: 10px; }
   .cuadros p {
@@ -175,6 +174,19 @@ h2 {
 
 .campo:focus {
   background-color: #4F6D7A; }
+
+.conte {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 50px 20px;
+  float: left; }
+  .conte img {
+    position: absolute;
+    left: 0;
+    transition: opacity 1s ease-in-out; }
+    .conte img.top:hover {
+      opacity: 0; }
 
 /* FORMULARIO CONTACTO */
 .secForm {
